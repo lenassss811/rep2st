@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paradoxos e Física</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('fundo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      color: white;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .top-bar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-bar h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .intro {
+      margin-top: 40px;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .intro h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .scroll-buttons {
+      text-align: center;
+      margin: 30px 0 10px;
+    }
+
+    .scroll-buttons button {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .scroll-buttons button:hover {
+      background-color: #ddd;
+    }
+
+    .carousel-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 20px;
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.75);
+      width: 280px;
+      margin-right: 20px;
+      border-radius: 10px;
+      padding: 20px;
+      vertical-align: top;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    .card a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .description {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #ccc;
+      display: none;
+    }
+
+    .card.active .description {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 240px;
+      }
+
+      .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <h1>Uni.verse</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Theory</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="intro">
+      <h1>Paradoxos na Física</h1>
+      <h2>Explorando os limites da realidade através da ciência</h2>
+    </div>
+  </header>
+
+  <main>
+    <div class="scroll-buttons">
+      <button onclick="scrollLeft()" aria-label="Rolar para a esquerda">◀️</button>
+      <button onclick="scrollRight()" aria-label="Rolar para a direita">▶️</button>
+    </div>
+
+    <div class="carousel-container" id="carousel">
+      <div class="card" onclick="toggleDescription(this)">
+        <a href="artigos/paradoxo-no-tempo.html"><h2>2. Paradoxo no Tempo: Relatividade Restrita</h2></a>
+        <div class="description">Como o tempo se comporta em diferentes quadros de referência? Explore o paradoxo dos gêmeos na teoria da relatividade.</div>
+      </div>
+      <div class="card" onclick="toggleDescription(this)">
+        <a href="artigos/superposicao-quantica.html"><h2>3. Superposição Quântica e a Lógica do Impossível</h2></a>
+        <div class="description">Descubra como partículas podem estar em vários estados ao mesmo tempo — até que alguém observe.</div>
+      </div>
+      <div class="card" onclick="toggleDescription(this)">
+        <a href="artigos/informacao-buracos-negros.html"><h2>4. Informação, Entropia e Buracos Negros</h2></a>
+        <div class="description">Será que a informação se perde para sempre em um buraco negro? Veja o que diz a física moderna.</div>
+      </div>
+      <div class="card" onclick="toggleDescription(this)">
+        <a href="artigos/causalidade-tempo.html"><h2>5. Causalidade e Viagens no Tempo</h2></a>
+        <div class="description">Viajar no tempo pode violar a causalidade? Entenda os paradoxos e as soluções possíveis.</div>
+      </div>
+      <div class="card" onclick="toggleDescription(this)">
+        <a href="artigos/dualidade-onda-particula.html"><h2>6. Dualidade Onda-Partícula e a Observação</h2></a>
+        <div class="description">O que realmente é uma partícula? Descubra o papel do observador na física quântica.</div>
+      </div>
+      <div class="card" onclick="toggleDescription(this)">
+        <a href="artigos/conclusao.html"><h2>7. Conclusão</h2></a>
+        <div class="description">Uma reflexão final sobre o papel dos paradoxos na construção do conhecimento físico.</div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function scrollLeft() {
+      document.getElementById("carousel").scrollBy({ left: -300, behavior: 'smooth' });
+    }
+
+    function scrollRight() {
+      document.getElementById("carousel").scrollBy({ left: 300, behavior: 'smooth' });
+    }
+
+    function toggleDescription(card) {
+      document.querySelectorAll('.card').forEach(c => {
+        if (c !== card) c.classList.remove('active');
+      });
+      card.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
