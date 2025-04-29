@@ -1,0 +1,131 @@
+    body {
+        margin: 0;
+        background: url('fundo.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Arial', sans-serif;
+        color: white;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-bar h1 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        color: #fff;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+
+    .intro {
+        margin-top: 40px;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .intro h2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .scroll-buttons {
+        text-align: center;
+        margin: 30px 0 10px;
+    }
+
+    .scroll-buttons button {
+        background-color: #fff;
+        color: #000;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .scroll-buttons button:hover {
+        background-color: #ddd;
+    }
+
+    .carousel-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 20px;
+        scroll-behavior: smooth;
+    }
+
+    .card {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.75);
+        width: 280px;
+        margin-right: 20px;
+        border-radius: 10px;
+        padding: 20px;
+        vertical-align: top;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card h2 {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    .card a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .description {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #ccc;
+        display: none;
+    }
+
+    .card.active .description {
+        display: block;
+    }
+
+    @media (max-width: 600px) {
+        .card {
+            width: 240px;
+        }
+
+        .top-bar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+    }
+    
