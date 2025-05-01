@@ -1,91 +1,105 @@
- *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-  }
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
 
-  body {
-      background-color: #2e0f0f;
-      color: #fff;
-  }
+ body {
+     background-color: black;
+     margin: 0;
+     font-family: 'Arial', sans-serif;
+ }
 
-  header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 10%;
-  }
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 10%;
+ }
 
-  header h1 {
-      color: #fff;
-  }
+ header h1 {
+     color: #ffffff;
+ }
 
-  nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-  }
+ nav a {
+     color: #fff;
+     margin-left: 20px;
+     text-decoration: none;
+ }
 
-  .main {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 50px 10%;
-  }
+ .main {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px 10%;
+ }
 
-  .text-content {
-      max-width: 500px;
-  }
+ .text-content {
+     max-width: 500px;
+ }
 
-  .text-content h3 {
-      color: #ffae42;
-      font-style: italic;
-  }
+ .text-content h3 {
+     color: #c1a2c5;
+     font-style: italic;
+ }
 
-  .text-content h1 {
-      font-size: 2.5em;
-      margin: 10px 0;
-  }
+ .text-content h1 {
+     font-size: 2.5em;
+     margin: 10px 0;
+     color: white;
+     font-family: "Imperial Script", cursive;
+     font-weight: 400;
+     font-style: normal;
+ }
 
-  .text-content p {
-      margin-bottom: 20px;
-      line-height: 1.6;
-  }
+ .text-content p {
+     margin-bottom: 20px;
+     line-height: 1.6;
+     color: white;
+ }
 
-  .buttons {
-      display: flex;
-      gap: 15px;
-  }
+ .buttons {
+     display: flex;
+     gap: 15px;
+ }
 
-  .buttons a {
-      display: inline-block;
-      padding: 12px 24px;
-      border-radius: 25px;
-      font-size: 1em;
-      text-decoration: none;
-      cursor: pointer;
-      transition: 0.3s ease;
-  }
+ .buttons a {
+     display: inline-block;
+     padding: 12px 24px;
+     border-radius: 25px;
+     font-size: 1em;
+     text-decoration: none;
+     cursor: pointer;
+     transition: 0.3s ease;
+ }
 
-  .order-btn {
-      background-color: #ffae42;
-      color: #000;
-  }
+ .order-btn {
+     background-color: #7e6a8a;
+     color: #ffffff;
+ }
 
-  .contact-btn {
-      border: 1px solid #fff;
-      color: #fff;
-      background: transparent;
-  }
+ .contact-btn {
+     border: 1px solid #fff;
+     color: #fff;
+     background: transparent;
+ }
 
-  .image {
-      max-width: 400px;
-  }
+ .image {
+     max-width: 1000px;
+ }
 
-  .image img {
-      width: 100%;
-      border-radius: 15px;
-  }
+ .image img {
+     width: 100%;
+     border-radius: 15px;
+ }
 
-  
+ footer {
+     position: fixed;
+     bottom: 10px;
+     right: 10px;
+     font-size: 12px;
+     color: #555;
+     background-color: transparent;
+ }
+ 

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,
+        sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+
+}
+
+header {
+    background-image: url(Exploring\ the\ Rich\ Lore\ of\ Demon\ Slayer_\ A\ Deep\ Dive\ into\ Its\ Background.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content h3 {
+    color: #c1a2c5;
+    font-style: italic;
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: white;
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: white;
+}
+
+table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 10px;
+    color: #4a148c;
+}
+
+thead th {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+}
+
+tbody td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f5f0ff;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #ffffff;
+}
+
+tr:hover td {
+    background-color: #e8def8;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+
+}
+
+h2 {
+    color: #4a148c;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a148c;
+}

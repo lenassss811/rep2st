@@ -1,9 +1,9 @@
 function scrollLeft() {
-    document.getElementById("carousel").scrollBy({ left: -300, behavior: 'smooth' });
+    document.getElementById("carousel").scrollBy({ left: -800, behavior: 'smooth' });
 }
 
 function scrollRight() {
-    document.getElementById("carousel").scrollBy({ left: 300, behavior: 'smooth' });
+    document.getElementById("carousel").scrollBy({ left: -800, behavior: 'smooth' });
 }
 
 function toggleDescription(card) {

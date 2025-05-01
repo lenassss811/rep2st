@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-image: url(Exploring\ the\ Rich\ Lore\ of\ Demon\ Slayer_\ A\ Deep\ Dive\ into\ Its\ Background.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+.text-content h3 {
+    color: #c1a2c5;
+    font-style: italic;
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: white;
+    font-family: "Imperial Script", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: white;
+}
+
+.video-container {
+    display: center;
+    gap: 20px;
+}
+
+video {
+    width: 480px;
+    height: 270px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.play-pause {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    font-size: 24px;
+}
+
+.progress-container {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.progress {
+    flex: 1;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.time {
+    font-size: 12px;
+}
